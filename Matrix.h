@@ -51,7 +51,7 @@ public:
     return rows[index];// To ensure bound check
   }
 
-  // We are using view since we don't want to copy our matricies data
+  // We are using view since we don't want to copy our matrices data
   VectorView<T> GetRow(size_t index) const
   {
     return sm::VectorView<T>(rows[index]);
